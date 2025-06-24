@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
+<body>    <header class="header">
         <nav class="nav">
             <div class="nav-brand">
                 <img src="logo.png" alt="CAVELAB" class="logo">
-            </div>            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mission">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#mission" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">Team</a></li>
+                <li><a href="#partners" class="nav-link">Partners</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -187,38 +192,42 @@
                                     <li>CAD & 3D Modeling</li>
                                     <li>Mechanical Engineering</li>
                                     <li>System Integration</li>
-                                </ul>
-                            </div>                        </div>
+                                </ul>                            </div>                        </div>
                     </div>
                 </div>
             </div>
-        </section></section><section id="contact" class="contact">
+        </section>        <section id="partners" class="partners">
             <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <div class="contact-content">
-                            <p>Ready to transform your business with IoT? Let's discuss your project.</p>
+                <h2 class="section-title">Our Partners</h2>
+                <div class="partners-content">
+                    <div class="partner-showcase">
+                        <div class="partner-card">
+                            <div class="partner-hero">
+                                <div class="partner-logo-container">
+                                    <img src="winglam.png" alt="Wing Lam Garden Logo" class="partner-logo">
+                                </div>
+                                <div class="partner-info">
+                                    <h3 class="partner-name">Wing Lam Garden</h3>
+                                    <p class="partner-type">Hydroponic Farm</p>
+                                    <p class="partner-location">Hong Kong</p>
+                                    <p class="partner-description">Leading sustainable agriculture through innovative hydroponic farming solutions, bringing fresh, locally-grown produce to Hong Kong communities.</p>
+                                </div>
+                            </div>
+                            <div class="partner-collaboration">
+                                <h4>Our Collaboration</h4>
+                                <p>We're working together to integrate smart IoT sensors and automation systems to optimize crop growth, monitor environmental conditions, and enhance farming efficiency through technology.</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form-container">
-                        <form class="contact-form" action="mailto:zoelam1215@outlook.com" method="post" enctype="text/plain">
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-button">Send Message</button>
-                        </form>
-                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Ready to transform your business with IoT? Let's discuss your project.</p>
                 </div>
             </div>
         </section>
