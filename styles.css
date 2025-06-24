@@ -709,6 +709,56 @@ body::before {
     pointer-events: none;
 }
 
+/* Values Section */
+.values-container {
+    margin-top: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.value-box {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-box:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 140, 66, 0.2);
+    box-shadow: 0 8px 24px rgba(255, 140, 66, 0.15);
+}
+
+.value-box h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: 0.012em;
+    position: relative;
+    z-index: 1;
+}
+
+.value-box p {
+    font-size: 17px;
+    line-height: 1.47059;
+    color: var(--text-light);
+    font-weight: 400;
+    letter-spacing: -0.022em;
+}
+
 /* Responsive Design */
 @media (max-width: 1068px) {
     .hero-title {
@@ -806,101 +856,7 @@ body::before {
         padding: 2rem;
         border-radius: 18px;
     }
-    
-    .vision-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .hero::after,
-    .mission::after,
-    .products::after {
-        display: none;
-    }
-    
-    .key-points {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-top: 3rem;
-    }
-    
-    .key-point {
-        padding: 2rem 1.5rem;
-        border-radius: 16px;
-    }
-}
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        padding: 1rem 2rem;
-    }
-    
-    .nav-menu {
-        gap: 1.5rem;
-        margin-top: 1rem;
-    }
-    
-    .hero {
-        padding: 120px 0 80px;
-    }
-    
-    .hero-content {
-        padding: 2.5rem 2rem;
-        border-radius: 18px;
-    }
-    
-    .hero-title {
-        font-size: 32px;
-        line-height: 1.125;
-    }
-    
-    .hero-subtitle {
-        font-size: 19px;
-        line-height: 1.42105;
-    }
-    
-    .section-title {
-        font-size: 32px;
-        line-height: 1.125;
-    }
-    
-    .services, .about, .contact {
-        padding: 80px 0;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .product-card {
-        padding: 2.5rem 2rem;
-        border-radius: 18px;
-    }
-    
-    .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .button-layout {
-        grid-template-columns: 1fr;
-    }
-    
-    .products {
-        padding: 80px 0;
-    }
-    
-    .mission {
-        padding: 80px 0;
-    }
-    
-    .mission-statement {
-        padding: 2rem;
-        border-radius: 18px;
-    }
-    
-    .vision-grid {
+      .values-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
