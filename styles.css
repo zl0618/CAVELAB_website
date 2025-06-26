@@ -1034,7 +1034,7 @@ body {
 }
 
 /* Footer Styles */
-.footer-center {
+.footer-content {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1068,40 +1068,27 @@ body {
 }
 
 /* Style footer links */
-.footer .footer-content .footer-center .footer-columns .footer-section a {
+.footer .footer-content .footer-columns .footer-section a {
     color: inherit !important;
     text-decoration: none !important;
     opacity: 0.8 !important;
     transition: opacity 0.3s ease !important;
 }
 
-.footer .footer-content .footer-center .footer-columns .footer-section a:hover {
+.footer .footer-content .footer-columns .footer-section a:hover {
     opacity: 1 !important;
 }
 
 /* Style footer logo */
-.footer .footer-content .footer-center .footer-columns .footer-section .footer-logo {
+.footer .footer-content .footer-columns .footer-section .footer-logo {
     max-width: 120px !important;
     height: auto !important;
     opacity: 1 !important;
     transition: opacity 0.3s ease !important;
 }
 
-.footer .footer-content .footer-center .footer-columns .footer-section .footer-logo:hover {
+.footer .footer-content .footer-columns .footer-section .footer-logo:hover {
     opacity: 1 !important;
-}
-
-/* Move footer content to the right */
-.footer .footer-content .footer-center {
-    display: flex !important;
-    justify-content: flex-end !important;
-    width: 100% !important;
-    padding-right: 5% !important;
-}
-
-/* Alternative approach to move footer content to the right */
-.footer .footer-content .footer-center .footer-columns {
-    margin-right: -15% !important;
 }
 
 /* Apple-style Product Hero Section */
